@@ -1,5 +1,7 @@
 <template>
   <view>
+    <!-- 使用自定义搜索组件 -->
+    <my-search @click="gotoSearch"></my-search>
     <view class="scroll-view-container">
       <!-- 左侧的滚动视图区域 -->
       <scroll-view scroll-y="true" class="left-scroll-view" :style="{height:wh+'px'}">
@@ -54,6 +56,11 @@
       gotoGoodsList(item) {
         uni.navigateTo({
           url:'/subpkg/goods_list/goods_list?cid='+item.cat_id
+        })
+      },
+      gotoSearch() {
+        uni.navigateTo({
+          url:'/subpkg/search/search'
         })
       }
     },
