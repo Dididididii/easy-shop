@@ -10,7 +10,7 @@ Vue.config.productionTip = false
 App.mpType = 'app'
 uni.$http = $http
 // 配置请求根路径
-$http.baseUrl = "https://www.uinav.com"
+$http.baseUrl = "https://api-hmugo-web.itheima.net"
 // 请求开始之前做一些事情
 $http.beforeRequest = (options)=>{
   uni.showLoading({
