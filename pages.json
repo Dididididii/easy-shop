@@ -4,7 +4,7 @@
             "path" : "pages/home/home",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "无忧商城",
+                "navigationBarTitleText": "聚物无忧",
                 "enablePullDownRefresh": false
             }
             
@@ -37,9 +37,35 @@
             
         }
     ],
+    "subPackages": [
+      {
+        "root": "subpkg",
+        "pages": [
+          {
+              "path" : "goods_detail/goods_detail",
+              "style" :
+              {
+                  "navigationBarTitleText": "",
+                  "enablePullDownRefresh": false
+              }
+              
+          }
+          
+            ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+      }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "无忧商城",
+		"navigationBarTitleText": "聚物无忧",
 		"navigationBarBackgroundColor": "#C00000",
 		"backgroundColor": "#FFFFFF",
 		"app-plus": {
